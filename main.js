@@ -1,15 +1,16 @@
-var jmlhAngkot = 10;
-var angkotOperasi = 6
-var angkot = 1;
+var n = '';
 
-for(angkot; angkot <= jmlhAngkot; angkot++){
-    if(angkot <= angkotOperasi){
-        console.log('ada ' + angkot + ' yang operasi')
-    }else{
-        console.log('ada ' + angkot + ' yang nganggur')
+for(var p = 1; p < 12;p++){
+    for(var l = 10;l >= p;l--){
+        n += ' ';
     }
-}
+    for(var h = 0; h < p;h++){
+        n += '*';
+    }
+    for(var i = 0;i < p;i++){
+        n += '*';
+    }
 
-            while(imNotSuccess){
-                keepTryingHard();
-            }
+    n += '\n';
+}
+console.log(n);
